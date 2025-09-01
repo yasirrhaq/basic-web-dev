@@ -1,0 +1,27 @@
+.nol {
+    background-color: coral;
+    margin: 20px auto;
+    padding: 50px;
+    border-left: 5px solid black;
+    border-right: 10px dashed blue;
+}
+
+div {
+    width: 600px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+.satu{
+    /* width: 570px; */
+    background-color: blue;
+    border: 5px solid red;
+    padding: 10px;
+}
+
+.dua{
+    /* width: 520px; */
+    background-color: greenyellow;
+    padding: 30px;
+    border: 10px dashed orange;
+}
