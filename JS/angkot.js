@@ -1,20 +1,15 @@
 var jumlahAngkot = 10;
 var angkotBeroperasi = 6;
-var nomorAngkot = 1;
-
-while (nomorAngkot <= angkotBeroperasi) {
-  console.log("Angkot No. " + nomorAngkot + " beroperasi dengan baik.");
-
-  nomorAngkot++;
-}
 
 for (
-  nomorAngkot = angkotBeroperasi + 1;
+  nomorAngkot = 1;
   nomorAngkot <= jumlahAngkot;
   nomorAngkot++
 ) {
-  if (nomorAngkot <= angkotBeroperasi) {
+  if (nomorAngkot <= angkotBeroperasi && nomorAngkot !== 5) {
     console.log("Angkot No. " + nomorAngkot + " beroperasi dengan baik.");
+  } else if (nomorAngkot === 8 || nomorAngkot === 10 || nomorAngkot === 5) {
+    console.log("Angkot No. " + nomorAngkot + " sedang  lembur.");
   } else {
     console.log("Angkot No. " + nomorAngkot + " sedang tidak beroperasi.");
   }
