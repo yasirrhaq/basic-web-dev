@@ -8,6 +8,14 @@ while (nomorAngkot <= angkotBeroperasi) {
   nomorAngkot++;
 }
 
-for (nomorAngkot = angkotBeroperasi + 1; nomorAngkot <= jumlahAngkot; nomorAngkot++) {
-  console.log("Angkot No. " + nomorAngkot + " sedang tidak beroperasi.");
+for (
+  nomorAngkot = angkotBeroperasi + 1;
+  nomorAngkot <= jumlahAngkot;
+  nomorAngkot++
+) {
+  if (nomorAngkot <= angkotBeroperasi) {
+    console.log("Angkot No. " + nomorAngkot + " beroperasi dengan baik.");
+  } else {
+    console.log("Angkot No. " + nomorAngkot + " sedang tidak beroperasi.");
+  }
 }
