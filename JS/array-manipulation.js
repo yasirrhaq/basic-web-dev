@@ -76,9 +76,27 @@ var anotherNumbers = numbers.map(function (e) {
 
 console.log(anotherNumbers.join("-"));
 
-// 7. sort
+// 7. sort -> sort() will only check the first character of numbers, by adding return a-b it will sort correctly.
 unsortedNumbers = [1, 23, 677, 345, 34];
 unsortedNumbers.sort(function (a, b) {
   return a - b;
 });
 console.log(unsortedNumbers.join("-"));
+
+// 8. filter
+
+var num = [1,23,5,6,7213,64,32,69];
+var num2 = num.filter(function (x){
+    return x > 5;
+});
+
+console.log(num2.join('-'));
+
+// 8.1 find -> not resulting in array but only a value.
+
+var num = [1,23,5,6,7213,64,32,69];
+var num2 = num.find(function (x){
+    return x > 5;
+});
+
+console.log(num2);
