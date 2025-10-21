@@ -38,3 +38,10 @@ const pall = document.querySelectorAll('p');
 for (let i = 0; i < pall.length; i++) {
     pall[i].style.backgroundColor = 'salmon';
 }
+
+const judul = document.getElementsByTagName('h1')[0];
+judul.setAttribute('name','bugon');
+
+const p2 = document.querySelector('.p2');
+p2.classList.add('label');
+p2.classList.toggle('label');
