@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Exercise</title>
+
+    <style>
+      body {
+        text-align: center;
+      }
+      .biru-muda {
+        background-color: lightblue;
+      }
+
+      .box {
+        width: 25px;
+        height: 25px;
+        margin: 10px auto;
+      }
+      .red {
+        background-color: red;
+      }
+      .green {
+        background-color: green;
+      }
+      .blue {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Playing with Color</h1>
+    <button type="button" id="changeColor">Change Color</button>
+
+    <br /><br />
+
+    <div class="red box"></div>
+    <input type="range" name="redSlider" min="0" max="255" />
+    <div class="green box"></div>
+    <input type="range" name="greenSlider" min="0" max="255" />
+    <div class="blue box"></div>
+    <input type="range" name="blueSlider" min="0" max="255" />
+    <script src="script.js"></script>
+  </body>
+</html>
