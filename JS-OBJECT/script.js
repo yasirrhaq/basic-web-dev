@@ -132,12 +132,56 @@
 // arguments
 // hoisting
 
-var nama = 'yasir';
-var username = 'yasirrhaq';
+var nama = "yasir";
+var username = "yasirrhaq";
 
-function printUrl(username){
-  var instagramUrl = 'https://instagram.com/';
-  return instagramUrl + username
+function printUrl(username) {
+  var instagramUrl = "https://instagram.com/";
+  return instagramUrl + username;
 }
 
 console.log(printUrl(username));
+
+// 2.2 Closure
+
+
+// lexical scope
+// function init() {
+//   let name = "yasir"; // local var
+//   function showName() { // inner function (closure*)
+//     console.log(name); // access to parent variable
+//   }
+//   showName();
+// }
+
+// init();
+
+
+function sayGreetings(time){
+  return function(name){
+    console.log(`Hi ${name}, Good ${time}, hope you enjoy your day!`);
+  }
+}
+
+let morning = sayGreetings('Morning');
+let afternoon = sayGreetings('Afternoon');
+let night = sayGreetings('Night');
+
+morning('yasir');
+afternoon('king');
+night('bos');
+
+console.dir(night);
+
+let add = (function(){
+  let counter = 0;
+  return function(){
+    return ++counter;
+  }
+})();
+
+console.log(add());
+console.log(add());
+console.log(add());
+console.log(add());
+console.log(add());
