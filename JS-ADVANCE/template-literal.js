@@ -99,11 +99,6 @@ function printTopics(topics) {
     </ol>`;
 }
 
-// <h2>${books.title}</h2>
-// <span class="author">${books.author}</span>
-// <h4>Topics: </h4>
-// ${printTopics(books.topics)}
-// </div>`;
 const el4 = `<div class="books">
 ${books.map(
   (book) => `<h2>${book.title}</h2>
